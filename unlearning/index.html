@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Unlearning - ManhattanJS, 23 April 2014, by Tiff Fehr</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <style type="text/css">
-      @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
-    </style>
+    <title>Unlearning - ManhattanJS, 23 April 2014, by Tiff Fehr</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <textarea id="source">
 
 class: center, middle
+name: title_card
 
-# Title
+# Unlearning
 
----
-
-# Agenda
-
-1. Introduction
-2. Deep-dive
-3. ...
+.footnote[Eric Meyer, [Spinning the Web](http://meyerweb.com/eric/thoughts/2011/06/03/spinning-the-web/) circa 2011, on [flickr](https://www.flickr.com/photos/meyerweb/5793058107/in/set-72157626750845115)]
 
 ---
 
-# Introduction
+class: center, middle
+name: intro
+
+# Hi.
+
+Tiff  |  NYT INT  |  dev
+
+---
+
+class: center, middle
+name: expert
+
+# Am I an Expert?
+
+I hope not.
+
+---
+
+class: center, middle
+name: next
+
+# Next
 
     </textarea>
-    <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript">
-    </script>
+    <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-      var slideshow = remark.create();
+      var slideshow = remark.create({
+        highlightLanguage: 'javascript',
+        highlightStyle: 'monokai'
+      });
     </script>
   </body>
 </html>
