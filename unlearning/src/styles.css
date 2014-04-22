@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+
+#guide {
+  color: #4D6470;/*teal*/
+  color: #404D54;/*dark teal*/
+  color: #d09d94;/*peach*/
+  color: #E8C8C3;/*light peach*/
+}
+
+body.remark-container {
+  background-color: #000;
+}
+div..remark-slide-scaler {
+  box-shadow: none;
+  -webkkit-box-shadow: none;
+}
+div.remark-slide-content {
+  background-color: #111;
+}
+body, h2, h3, h4, h5, h6 {
+  color: #d09d94;/*peach*/
+  font-family: 'Bitter', Georgia, Times New Roman, serif;
+  font-weight: 400;
+}
+h1 {
+  color: #4D6470;/*teal*/
+  font-family: 'PT Sans Narrow', Helvetica, Arial, sans-serif; /*'Droid Sans';*/
+  font-weight: 700;
+  font-size: 48px;
+}
+  #intro h1 {
+    color: #d09d94;/*peach*/
+    background-color: #000;
+  }
+li, p, a, a:link, a:hover, a:active, a:focus {
+  color: #d09d94;/*peach*/
+  font-size: 36px;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+a, a:link, a:hover, a:active, a:focus {
+  color: #E8C8C3;/*light peach*/
+}
+a:hover, a:visited {
+  text-decoration: none;
+  border-bottom: 1px solid #E8C8C3;/*light peach*/
+  transition: border-color 0.3s linear;
+  -webkit-transition: border-color 0.3s linear;
+}
+
+#slide-title_card {
+  background: transparent url('eric-meyer_msnbc_spinning_the_web.png') top center no-repeat;
+  background-size: auto auto;
+  background-size: cover !important;
+}
+#slide-ngram img,
+#slide-overhead img {
+  width: 100%; height: auto;
+}
+
+#slide-quotes p {
+  font-size: 20px;
+}
+  #slide-quotes p span.credit, 
+  #slide-quotes p span.credit a {
+    font-size: 18px;
+  }
+
+li {
+  color: #d09d94;/*peach*/
+}
+li .more {
+  color: #4D6470;/*teal*/
+}
+
+.bkglist {
+  background-position: 50% 100%;
+}
+  #slide-gfx-more.bkglist {
+    background-size: cover !important;
+  }
+  .bkglist:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #000;
+    top: 0px; left: 0px;
+    width: 100%; height: 100%;
+    opacity: 0.85;
+    z-index: 1;
+  }
+    .bkglist h1, .bkglist ul {
+      position: relative;
+      z-index: 2;
+    }
+
+#slide-history p {
+  text-align: left;
+}
+span.lede {
+  font-size: 48px;
+}
+
+span.credit {
+  margin-top: 0.5em;
+  display: block;
+  color: #404D54;/*dark teal*/
+  font-size: 24px;
+}
+  span.credit a {
+    color: #4D6470;/*teal*/
+    font-size: 24px;
+  }
+  span.credit a:hover {
+    border-bottom-color: #4D6470;/*teal*/
+  }
+
+span.pipe {
+  /*color: #4D6470;/*teal*/
+  padding: 0px 15px;
+}
+
+.remark-slide-number,
+.footnote {
+  color: #404D54;/*dark teal*/
+  display: block;
+  font-size: 18px;
+  position: relative;
+  right: 0px;
+  text-align: right;
+}
+  .footnote a {
+    color: #404D54;/*dark teal*/
+    font-size: 18px;
+  }
+  .footnote a:hover {
+    border-bottom-color: #4D6470;/*teal*/
+  }
