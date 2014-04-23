@@ -86,9 +86,18 @@
 
 /*add button*/
   #unlearning #next_slide {display: none;}
-  #unlearning[data-admin='true'] #next_slide {
+  #unlearning.admin #next_slide {
+    cursor: pointer;
+    background-color: #4D6470;/*teal*/
+    color: #FFF;
+    outline: 1px soild lime;
+    font-size: 48px; font-weight: bold;
     display: block;
-    height: 50px;
+    height: 100px; width: 200px;
+    margin: 30px;
+    position: absolute;
+    top: 200px; left: 200px;
+    z-index: 10;
   }
 
 /*credits*/

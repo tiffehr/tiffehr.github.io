@@ -342,27 +342,8 @@ Questions?
 [http://www.niemanlab.org/2013/12/the-year-to-eradicate-imposter-syndrome/](http://www.niemanlab.org/2013/12/the-year-to-eradicate-imposter-syndrome/)]
 
     </textarea>
-    <button id="next_slide">Next</button>
     <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
     <script src="http://js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      var unlearning = remark.create({
-        highlightLanguage: 'javascript',
-        highlightStyle: 'monokai'
-      });
-
-      var pusher = new Pusher('5fe848d69253c2cc86bf'),
-          channel = pusher.subscribe('unlearning');
-      console.log(channel);
-
-      document.getElementById('next_slide').onclick = function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        console.log('click');
-        var triggered = channel.trigger('next_slide', {'next_slide':true});
-      }
-      
-      channel.bind('next_slide', function(data) { unlearning.gotoNextSlide(); });
-    </script>
+    <script src="src/script.js" type="text/javascript"></script>
   </body>
 </html>
