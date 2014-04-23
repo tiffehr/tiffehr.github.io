@@ -9,132 +9,186 @@
   color: #E8C8C3;/*light peach*/
 }
 
-body.remark-container {
-  background-color: #000;
-}
-div..remark-slide-scaler {
-  box-shadow: none;
-  -webkkit-box-shadow: none;
-}
-div.remark-slide-content {
-  background-color: #111;
-}
-body, h2, h3, h4, h5, h6 {
-  color: #d09d94;/*peach*/
-  font-family: 'Bitter', Georgia, Times New Roman, serif;
-  font-weight: 400;
-}
-h1 {
-  color: #4D6470;/*teal*/
-  font-family: 'PT Sans Narrow', Helvetica, Arial, sans-serif; /*'Droid Sans';*/
-  font-weight: 700;
-  font-size: 48px;
-}
-  #intro h1 {
-    color: #d09d94;/*peach*/
-    background-color: #000;
+/*fundamentals*/
+  body#unlearning {
+    background-color: #111;
   }
-li, p, a, a:link, a:hover, a:active, a:focus {
-  color: #d09d94;/*peach*/
-  font-size: 36px;
-  border-bottom: 1px solid transparent;
-  text-decoration: none;
-}
-a, a:link, a:hover, a:active, a:focus {
-  color: #E8C8C3;/*light peach*/
-}
-a:hover, a:visited {
-  text-decoration: none;
-  border-bottom: 1px solid #E8C8C3;/*light peach*/
-  transition: border-color 0.3s linear;
-  -webkit-transition: border-color 0.3s linear;
-}
+  body#unlearning, 
+  #unlearning h2, 
+  #unlearning h3, 
+  #unlearning h4, 
+  #unlearning h5, 
+  #unlearning h6 {
+    color: #d09d94;/*peach*/
+    font-family: 'Bitter', Georgia, Times New Roman, serif;
+    font-weight: 400;
+  }
+  #unlearning h1 {
+    color: #4D6470;/*teal*/
+    font-family: 'PT Sans Narrow', Helvetica, Arial, sans-serif; /*'Droid Sans';*/
+    font-weight: 700;
+    font-size: 48px;
+  }
+  #unlearning li, 
+  #unlearning p, 
+  #unlearning a {
+    color: #d09d94;/*peach*/
+    font-size: 34px;
+  }
+  #unlearning a, 
+  #unlearning a:link, 
+  #unlearning a:hover, 
+  #unlearning a:active, 
+  #unlearning a:focus {
+    color: #E8C8C3;/*light peach*/
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+  }
+  #unlearning a:hover,
+  #unlearning a:active, 
+  #unlearning a:focus {
+    text-decoration: none;
+    border-bottom: 1px solid #E8C8C3;/*light peach*/
+    transition: border-color 0.3s linear;
+    -webkit-transition: border-color 0.3s linear;
+  }
+  #unlearning li {
+    color: #d09d94;/*peach*/
+  }
+  #unlearning li .more {
+    color: #4D6470;/*teal*/
+  }
 
-#slide-title_card {
-  background: transparent url('eric-meyer_msnbc_spinning_the_web.png') top center no-repeat;
-  background-size: auto auto;
-  background-size: cover !important;
-}
-#slide-ngram img,
-#slide-overhead img {
-  width: 100%; height: auto;
-}
-
-#slide-quotes p {
-  font-size: 20px;
-}
-  #slide-quotes p span.credit, 
-  #slide-quotes p span.credit a {
+/*slide defaults*/
+  #unlearning .hljs-monokai .hljs {
     font-size: 18px;
   }
-
-li {
-  color: #d09d94;/*peach*/
-}
-li .more {
-  color: #4D6470;/*teal*/
-}
-
-.bkglist {
-  background-position: 50% 100%;
-}
-  #slide-gfx-more.bkglist {
-    background-size: cover !important;
+  #unlearning div.remark-slide>.middle {
+    vertical-align: top;
+    padding-top: 15%;
   }
-  .bkglist:before {
-    content: "";
-    position: absolute;
-    display: block;
-    background-color: #000;
-    top: 0px; left: 0px;
-    width: 100%; height: 100%;
-    opacity: 0.85;
-    z-index: 1;
+  #unlearning div.remark-slide-scaler {
+    box-shadow:          0px 0px 0px black;
+    -webkkit-box-shadow: 0px 0px 0px black;
   }
-    .bkglist h1, .bkglist ul {
-      position: relative;
-      z-index: 2;
-    }
+  #unlearning .remark-slide-content {
+    background-color: #1A1A1A;
+  }
+  #unlearning .remark-slide-number {
+    display: none;
+  }
 
-#slide-history p {
-  text-align: left;
-}
-span.lede {
-  font-size: 48px;
-}
+/*negate borders for linked images*/
+  #unlearning a:hover > img {
+    border-bottom: 0px;
+    outline: 1px solid lime;
+  }
 
-span.credit {
-  margin-top: 0.5em;
+/*add button*/
+#unlearning #next_slide {display: none;}
+#unlearning[data-admin='true'] #next_slide {
   display: block;
-  color: #404D54;/*dark teal*/
-  font-size: 24px;
+  height: 50px;
 }
-  span.credit a {
-    color: #4D6470;/*teal*/
+
+/*credits*/
+  #unlearning #slide-quotes p span.credit, 
+  #unlearning #slide-quotes p span.credit a {
+    font-size: 18px;
+  }
+  #unlearning span.credit {
+    margin-top: 0.5em;
+    display: block;
+    color: #404D54;/*dark teal*/
     font-size: 24px;
   }
-  span.credit a:hover {
-    border-bottom-color: #4D6470;/*teal*/
+    #unlearning span.credit a {
+      color: #4D6470;/*teal*/
+      font-size: 24px;
+    }
+    #unlearning span.credit a:hover {
+      border-bottom-color: #4D6470;/*teal*/
+    }
+
+  #unlearning span.pipe {
+    /*color: #4D6470;/*teal*/
+    padding: 0px 15px;
   }
 
-span.pipe {
-  /*color: #4D6470;/*teal*/
-  padding: 0px 15px;
-}
+  #unlearning .footnote {
+    color: #333;
+    display: block;
+    font-size: 18px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    text-align: right;
+  }
+    #unlearning .footnote a {
+      color: #333;/*dark teal*/
+      font-size: 18px;
+      text-decoration: underline;
+    }
+    #unlearning .footnote a:hover {
+      color: #666;
+      border-bottom-color: transparent;/*teal*/
+    }
 
-.remark-slide-number,
-.footnote {
-  color: #404D54;/*dark teal*/
-  display: block;
-  font-size: 18px;
-  position: relative;
-  right: 0px;
-  text-align: right;
-}
-  .footnote a {
-    color: #404D54;/*dark teal*/
+/*specific slides*/
+  #unlearning #slide-title_card h1 {
+    color: #d09d94;/*peach*/
+    background-color: transparent;
+    font-size: 72px;
+    margin-top: -30px;
+    text-align: left;
+    text-shadow:          3px 3px 5px black;
+    -webkkit-text-shadow: 3px 3px 5px black;
+    -webkit-transform:  rotate(-30deg);
+    transform:          rotate(-30deg);
+  }
+  #unlearning #slide-title_card {
+    background: #FFF url('blackout.jpg') top center no-repeat;
+  }
+  #unlearning #slide-ngram img,
+  #unlearning #slide-overhead img {
+    width: 100%; height: auto;
+  }
+  #unlearning #slide-history span.lede {
+    color: #4D6470;/*teal*/
+    font-size: 48px;
+  }
+  #unlearning #slide-poetry img {
+    height: 500px;
+  }
+  #unlearning #slide-quotes p {
     font-size: 18px;
   }
-  .footnote a:hover {
-    border-bottom-color: #4D6470;/*teal*/
+  #unlearning #slide-wreck-it img {
+    width: 500px;
   }
+  #unlearning #slide-presidents img {
+    width: 500px;
+  }
+
+/*fancy lists*/
+  #unlearing .bkglist {
+    background-position: 50% 100%;
+  }
+    #slide-gfx-more.bkglist {
+      background-size: cover !important;
+    }
+    .bkglist:before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: #000;
+      top: 0px; left: 0px;
+      width: 101%; height: 100%;
+      opacity: 0.85;
+      z-index: 1;
+    }
+      .bkglist h1, .bkglist ul {
+        position: relative;
+        z-index: 2;
+      }
+
