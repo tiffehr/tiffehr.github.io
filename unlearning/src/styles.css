@@ -78,12 +78,6 @@
     display: none;
   }
 
-/*negate borders for linked images*/
-  #unlearning a:hover > img {
-    border-bottom: 0px;
-    outline: 1px solid lime;
-  }
-
 /*add button*/
   #unlearning #next_slide {display: none;}
   #unlearning.admin #next_slide {
