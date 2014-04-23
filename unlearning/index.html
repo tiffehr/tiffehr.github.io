@@ -20,7 +20,7 @@ name: intro
 
 # Hi.
 
-Tiff .pipe[|]  NYT INT  .pipe[|]  dev
+[@tiffehr](http://www.twitter.com/tiffehr) .pipe[|]  NYT INT  .pipe[|]  JS dev
 
 ---
 
@@ -81,6 +81,15 @@ class: center, middle
 name: gfx-attribution
 
 Yeah, that's all Graphics.
+
+---
+
+class: center, top
+name: overhead
+
+# Informative infographic
+
+![2nd East, Podium](src/floorplan2.png)
 
 ---
 
@@ -154,19 +163,19 @@ name: elective
 
 #Upshot's elective challenges
 
-* team shuffling
-
---
-
 * working _with_ our CMS
 
 --
+
+name: nyt5
 
 * working in our redesign's code ecosystem
 
 --
 
-* ...and its huge dev environment dependencies
+name: team
+
+* team shuffling
 
 ---
 
@@ -177,16 +186,12 @@ name: additive
 
 * me sabotaging us for a few days with 
       
-<code>{ filter: grayscale(50%) }</code>
+<pre><code>.selector { filter: grayscale(50%) }</code></pre>
 
---
 
 * Design, love 'em or leave 'em
 
---
-
-* crufty LESS mixins
-
+* PHP because why not
 
 ---
 
@@ -195,120 +200,37 @@ name: poetry
 
 #As of Today: Blackout Poetry
 
-[![Titanic Blackout](src/blackout.jpg)](http://www.nytimes.com/interactive/2014/multimedia/blackout-poetry.html)
-
----
-
-class: center, top
-name: overhead
-
-# Informative infographic
-
-![2nd East, Podium](src/floorplan2.png)
-
----
-
-class: top, left, wordy
-name: quotes
-
-# Skilled internet research
-
-"to discard from knowledge or memory; to give up knowledge of (something)"
-.credit[— OED]
-
-“To attain knowledge, add things everyday. To attain wisdom, remove things every day.”
-.credit[— Lao Tse]
-
-“The most necessary part of learning is unlearning our errors.”
-.credit[— Zeno]
-
-"...we moderns can learn only if we always unlearn at the same time. Applied to the matter before us, we can learn thinking only if we radically unlearn what thinking has been traditionally." 
-.credit[— [Heidegger, “Was Heißt Denken?”, 1954](http://hermitmusic.tripod.com/heidegger_thinking.pdf)]
-
-"We must ask ourselves whether it is satisfactory, as thinking beings, to accept the present state of things constantly in a state of flux.  If we are to take these things at present value, without examining what it is that composes them or what lies hidden beneath their surfaces, we essentially have learned and thought nothing. We have simply seen a thing.  So, too, with ideas." 
-.credit[— [Christopher Chamberlin, "Thinking and Building in a More Originary Way"](http://www.arch.ksu.edu/seamon/Chamberlin.htm)]
+[![Titanic Blackout](src/poem.jpg)](http://www.nytimes.com/interactive/2014/multimedia/blackout-poetry.html)
 
 ---
 
 class: top, left
-name: ngram
+name: blackout
 
-# Skilled internet infovis
+# Challenges
 
-[![Google NGram](src/ngram.png)](https://books.google.com/ngrams/graph?content=unlearning&year_start=1600&year_end=2008&corpus=15&smoothing=2&share=&direct_url=t1%3B%2Cunlearning%3B%2Cc0)
+* Backbone — will it stay polite?
 
----
+* New site framework
 
-class: center, middle
-name: pie
+* Keeping up momentum
 
-# 50 &ndash; 30 &ndash; 20
+* Heavy constraints
 
-Gladwell .pipe[:] internet crackpot .pipe[:] philosophy
-
---
-
-name: wow
-template: pie
-
-![huh](src/wow.png)
+* Social tags, sigh
 
 ---
 
 class: top, left
-name: require
+name: gains
 
-# RequireJS, NYT5-style
+# Gains (to date)
 
-<pre><code>
-  define("widget",[
-    'jquery/nyt',
-    'underscore/1.5',
-    'foundation/views/page-manager', //optional
-  ], 
-  function($, _, PageManager) {
-    
-    var Widget = {
+* Canvas stuff!
 
-      settings: null,
+* Framework improvements
 
-      initialize: function(settings) { ... },
-
-      stuff: function() { ... },
-
-      things: function() { ... }
-
-    };
-
-    return Widget;
-  
-  });</code></pre>
-
----
-
-class: top, left
-name: history
-
-.lede[History must be curved,] for there is a horizon in the affairs of mankind. Beyond this horizon, events pass out of historical consciousness and into myth. Accounts are shortened, complexities sloughed off, analogous figures fused, traditions “abraded into anecdotes.” Real people become culture heroes: archetypical beings performing iconic deeds.
-.credit[[—Jan Vansina, “Oral Tradition as History”](http://books.google.com/books/about/Oral_Tradition_as_History.html?id=J7wbS71dVbcC), 1985]
-
-.footnote[Source: [The Great Ptolemaic Smackdown](http://tofspot.blogspot.com/2013/08/the-great-ptolemaic-smackdown.html)]
-
----
-
-class: top, center
-name: percolation
-
-# Percolation
-
-
----
-
-class: top, center
-name: 
-
-#Stuff
-
+* Some new git tricks
 
 ---
 
@@ -330,21 +252,103 @@ name: presidents
 
 ![Issues and Pull Requests](src/presidents.png)
 
----
-
-# Just for this
-
-* Some WebSockets dorkiness enabled by colleagues and Pusher.js.  (I've been switching my slides via a JS event relayed via sockets from the Chrome instance on my phone.)
-
-* Also, finally bothering with a github.io project.  
-
-* And trying out a 'self-hosted' slideshow JS app.
 
 ---
 
-# Questions?
+class: top, left
+name: sockets
 
-Also, thanks.
+# Learned Just For This
+
+* Some WebSockets-enabled, enabled by colleagues and Pusher.js
+
+* Also, finally bothering with a github.io project
+
+* And trying out a 'self-hosted' slideshow JS app
+
+---
+
+class: top, left, wordy
+name: quotes
+
+# Skilled internet research
+
+“to discard from knowledge or memory; to give up knowledge of (something)”
+.credit[— OED]
+
+
+“...we moderns can learn only if we always unlearn at the same time. Applied to the matter before us, we can learn thinking only if we radically unlearn what thinking has been traditionally.”
+.credit[— [Heidegger, “Was Heißt Denken?”/“What Is Called Thinking”, 1954](http://hermitmusic.tripod.com/heidegger_thinking.pdf)]
+
+“To attain knowledge, add things everyday. To attain wisdom, remove things every day.”
+.credit[— Lao Tse]
+
+“The most necessary part of learning is unlearning our errors.”
+.credit[— Zeno]
+
+---
+
+class: top, left
+name: ngram
+
+# Skilled internet infovis
+
+[![Google NGram](src/ngram.png)](https://books.google.com/ngrams/graph?content=unlearning&year_start=1600&year_end=2008&corpus=15&smoothing=2&share=&direct_url=t1%3B%2Cunlearning%3B%2Cc0)
+
+---
+
+class: center, middle
+name: pie
+
+# 50 &ndash; 30 &ndash; 20
+
+Gladwell .pipe[:] internet crackpot .pipe[:] philosophy
+
+--
+
+name: heads
+template: pie
+
+
+.ha[![Gladwell](src/gladwell.jpeg) .pipe[:] ![Heidegger](src/heidegger.jpg) .pipe[:] ![Ptolemy](src/ptolemy.gif)]
+
+---
+
+class: top, left
+name: history
+
+.lede[History must be curved,] for there is a horizon in the affairs of mankind. Beyond this horizon, events pass out of historical consciousness and into myth. Accounts are shortened, complexities sloughed off, analogous figures fused, traditions “abraded into anecdotes.” Real people become culture heroes: archetypical beings performing iconic deeds.
+.credit[[—Jan Vansina, “Oral Tradition as History”](http://books.google.com/books/about/Oral_Tradition_as_History.html?id=J7wbS71dVbcC), 1985]
+
+.footnote[Source: [The Great Ptolemaic Smackdown](http://tofspot.blogspot.com/2013/08/the-great-ptolemaic-smackdown.html)]
+
+---
+
+class: top, left
+name: horizons
+
+# Dueling Horizon Metaphors
+
+* Losing sight of the bigger picture
+
+--
+
+* Chasing a contantly receeding goal
+
+--
+
+* Probably a bit of both
+
+---
+
+class: top, left
+name: end
+
+# Unlearn Stuff Today!
+
+Questions?
+
+Also, thank you all very much.
 
 *Citations:*
 [http://philosophyforchange.wordpress.com/2010/09/29/unlearning-in-crisis-and-change/](http://philosophyforchange.wordpress.com/2010/09/29/unlearning-in-crisis-and-change/)

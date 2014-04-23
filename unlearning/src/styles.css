@@ -85,11 +85,11 @@
   }
 
 /*add button*/
-#unlearning #next_slide {display: none;}
-#unlearning[data-admin='true'] #next_slide {
-  display: block;
-  height: 50px;
-}
+  #unlearning #next_slide {display: none;}
+  #unlearning[data-admin='true'] #next_slide {
+    display: block;
+    height: 50px;
+  }
 
 /*credits*/
   #unlearning #slide-quotes p span.credit, 
@@ -168,6 +168,12 @@
   }
   #unlearning #slide-presidents img {
     width: 500px;
+  }
+  #unlearning #slide-heads .ha img {
+    width: 200px; 
+    height: auto;
+    vertical-align: top;
+    display: inline-block;
   }
 
 /*fancy lists*/
