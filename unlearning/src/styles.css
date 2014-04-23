@@ -55,6 +55,10 @@
   #unlearning li {
     color: #d09d94;/*peach*/
   }
+  #unlearning code {
+    color: #404D54;/*dark teal*/
+    font-size: 0.8em;
+  }
 
 /*slide defaults*/
   #unlearning .hljs-monokai .hljs {
@@ -172,7 +176,8 @@
     height: 500px;
   }
   #unlearning #slide-quotes p {
-    font-size: 18px;
+    font-size: 20px;
+    padding-bottom: 10px;
   }
   #unlearning #slide-wreck-it img {
     width: 500px;
