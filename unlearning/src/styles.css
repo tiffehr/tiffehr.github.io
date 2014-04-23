@@ -55,9 +55,6 @@
   #unlearning li {
     color: #d09d94;/*peach*/
   }
-  #unlearning li .more {
-    color: #4D6470;/*teal*/
-  }
 
 /*slide defaults*/
   #unlearning .hljs-monokai .hljs {
@@ -204,7 +201,7 @@
       background-color: #000;
       top: 0px; left: 0px;
       width: 101%; height: 100%;
-      opacity: 0.85;
+      opacity: 0.66;
       z-index: 1;
     }
       .bkglist h1, .bkglist ul {
