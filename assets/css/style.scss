@@ -2,57 +2,33 @@
 ---
 
 @import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,0,200;0,400;0,600;0,700;0,800;1,200&display=swap');
 body {
   background-color: mintcream;
   color: darkslategrey;
-  /*font: 300 1.1em/1.66em 'Libre Franklin', sans-serif;
+  font: 300 0.9em/1.4em 'Libre Franklin', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: common-ligatures proportional-nums;
-  margin: 2.0em auto;
-  max-width: 640px;
-  min-width: 320px;*/
 }
 a, a:link, a:visited, a:active, a:hover {
   color: cadetblue;
   border-width: 0px 0px 1px 0px;
-  /* border-color: cadetblue; */
   border-bottom-style: dotted;
   font-weight: 600;
   text-decoration: none;
 }
 a:visited { color: darkslategrey; }
 a:active, a:hover { color: black; }
-/*h1, h2, h3 {
-font-family: 'Libre Franklin';
-color: cadetblue;
-margin: 0 auto 1.6em 0;
-padding: 0px;
+h1, h2, h3 {
+  font-family: 'Libre Franklin';
+  color: cadetblue;
 }
 h1 {
   color: darkslategrey;
-  font-size: 2.8em;
-  font-weight: 200;
-  line-height: 1.0em;
-  letter-spacing: -0.025em;
-  margin-bottom: 0.6em;
+  /*letter-spacing: -0.025em;*/
 }
 h2 {
-    background-color: #3d797b;
-    color: mintcream;
-    display: inline-block;
-    font-size: 0.8em;
-    font-weight: 600;
-    line-height: 1.1em;
-    margin-left: -0.25em;
-    padding: 0.25em 0.45em;
-    text-transform: uppercase;
+  color: #3d797b;
 }
 h3 {
   color: #555555;
-  font-size: 1.2em;
-  line-height: 0.9em;
 }
-#core {
-max-width: 640px;
-min-width: 320px;
-}*/
