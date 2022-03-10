@@ -2,11 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,0,200;0,400;0,600;0,700;0,800;1,200&display=swap');
 body {
   background-color: mintcream;
   color: darkslategrey;
-  font: 300 0.9em/1.4em 'Libre Franklin', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: common-ligatures proportional-nums;
 }
 a, a:link, a:visited, a:active, a:hover {
@@ -19,7 +17,6 @@ a, a:link, a:visited, a:active, a:hover {
 a:visited { color: darkslategrey; }
 a:active, a:hover { color: black; }
 h1, h2, h3 {
-  font-family: 'Libre Franklin';
   color: cadetblue;
 }
 h1 {
